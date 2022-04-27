@@ -105,6 +105,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.resp{
+    display: none;
+}
 
 li {
     list-style: none;
@@ -152,15 +155,27 @@ li:hover , a:hover {
         grid-area: m;
         display: flex;
         justify-content: center;
+        padding: 0;
     }
     .main .texto{
-        font-size: 20px;
+        font-size: 15px;
         
+    }
+    .texto{
+        width: 90%;
     }
 
     .aside {
+        padding-top: 100px;
         grid-area: a;
-        height: 750px;
+        height: 650px;
+    }
+    .resp{
+        display: block;
+        font-size: 15px;
+    }
+    .front{
+        margin: auto;
     }
     .aside li{
         margin-top: 20px;
@@ -169,5 +184,6 @@ li:hover , a:hover {
     .footer {
 
     grid-area: f;
+    display: none;
     }
 }
